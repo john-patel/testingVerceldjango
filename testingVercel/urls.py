@@ -18,16 +18,16 @@ from django.contrib import admin
 from django.urls import path
 from APP import views
 
-# urlpatterns = [
-#   path('admin/', admin.site.urls),
-#    path('',views.home)
-#]
+urlpatterns = [
+  path('admin/', admin.site.urls),
+  path('',views.home)
+]
 
 # your imports
 urlpatterns = [
     #url paths
 ]
 #urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
-urlpatterns += path('admin/', admin.site.urls)
-urlpatterns += path('',views.home)
+# urlpatterns += path('admin/', admin.site.urls)
+# urlpatterns += path('',views.home)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
