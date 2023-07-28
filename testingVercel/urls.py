@@ -19,6 +19,7 @@ from django.urls import path
 from APP import views
 from django.conf.urls.static import static
 
+print("Hellow World")
 
 urlpatterns = [
   path('admin/', admin.site.urls),
